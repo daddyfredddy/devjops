@@ -8,8 +8,8 @@ import logo3 from "./logos/vector.svg";
 function App() {
   return (
     <div className="logoContainer">
-      <WorkBoard />
-      <WorkBoard />
+     <WorkBoard img={logo1}/>
+      
     </div>
   );
 }

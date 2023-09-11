@@ -9,13 +9,14 @@ function WorkBoard() {
       </div>
       <ul>
         {data.map((item) => (
-          <li key={item.id}>
-            {item.postedAt}
-            {item.contract}
+          <div key={item.id}>
+            <img src=""/>
+            <p>{item.postedAt}</p>
+            <p>{item.contract}</p>
             <h6>{item.position}</h6>
-            {item.company}
-            {item.location}
-          </li>
+            <p>{item.company}</p>
+            <h4>{item.location}</h4>
+          </div>
         ))}
       </ul>
     </div>
