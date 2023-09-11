@@ -1,15 +1,25 @@
-import React from 'react'
+import React from "react";
+import data from "./data/data.json";
 
-function WorkBoard({data}) {
+function WorkBoard() {
   return (
-    <div>
-        <ul>
-            {data.map((work) => (
-                <li key={work.id}>{}</li>
-            ))}
-        </ul>
+    <div className="container">
+      <div className="nav">
+        <h3>devjobs</h3>
+      </div>
+      <ul>
+        {data.map((item) => (
+          <li key={item.id}>
+            {item.postedAt}
+            {item.contract}
+            <h6>{item.position}</h6>
+            {item.company}
+            {item.location}
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
 
-export default WorkBoard
+export default WorkBoard;
